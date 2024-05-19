@@ -1,0 +1,19 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.page-title {
+  text-align: center;
+  color: #fff; 
+  font-size: 2em; 
+}
