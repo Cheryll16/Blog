@@ -3,6 +3,7 @@ url: "https://cheryll16.github.io/Blog/"
 title: "Ipse Dixit"
 description: "A Personal Blog"
 lang: "en"
+include: ['assets']
 
 
   
