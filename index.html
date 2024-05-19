@@ -17,7 +17,7 @@
     }
 
     .navbar a {
-      float: left; 
+      float: left; /* 使链接水平排列 */
       display: block;
       color: white;
       text-align: center;
@@ -31,9 +31,7 @@
     }
 
     .header {
-      background-image: url('header-background.jpg');
-      background-size: cover;
-      padding: 100px 0;
+      padding-top: 50px; /* 调整上边距以适应标题 */
       text-align: center;
       color: white;
       font-size: 3em;
@@ -45,6 +43,13 @@
       background-color: #f4f4f4;
       text-align: center;
     }
+
+    /* 清除浮动 */
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
   </style>
 </head>
 <body>
@@ -53,8 +58,7 @@
     <h1>Ipse Dixit</h1>
   </div>
 
- 
-  <div class="navbar">
+  <div class="navbar clearfix"> <!-- 添加 clearfix 类 -->
     <a href="#home">Home</a>
     <a href="#blog">Blog</a>
     <a href="#travel">Travel</a>
@@ -64,7 +68,6 @@
 
   <div class="content">
     <p>Welcome to my landing page.</p>
-    
   </div>
 
 </body>
