@@ -2,27 +2,35 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  min-height: 100%; /* 使用 min-height 替代 height */
 }
 
 /* 头部样式 */
 .header {
-  text-align: center; /* 使标题文本居中 */
-  padding: 20px; /* 根据需要添加内边距 */
-  background-color: #f8f8f8; 
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
-  width: 100%; /* 占满整个页面宽度 */
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
 }
 
 /* 导航栏样式 */
 .navbar {
-  background-color: #333; /* 导航栏背景颜色 */
-  display: flex; /* 使用Flexbox布局 */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  list-style: none; /* 移除列表的默认样式 */
-  padding: 0; /* 移除列表的内边距 */
-  margin: 0; /* 移除列表的外边距 */
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: auto; /* 或者设置一个固定的高度 */
+}
+
+/* 导航栏ul样式 */
+.navbar ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 /* 导航链接样式 */
@@ -31,13 +39,13 @@ html, body {
 }
 
 .navbar a {
-  color: white; /* 链接文字颜色 */
-  text-decoration: none; /* 移除下划线 */
-  padding: 10px 15px; /* 链接的内边距 */
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block; /* 使链接填充其容器 */
 }
 
 .navbar a:hover {
-  background-color: #ddd; /* 鼠标悬浮时的背景颜色 */
-  color: black; /* 鼠标悬浮时的文字颜色 */
+  background-color: #ddd;
+  color: black;
 }
-
