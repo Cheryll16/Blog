@@ -1,46 +1,31 @@
 /* 页面整体样式 */
-* {
+body, html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body, html {
   font-family: Arial, sans-serif;
-}
-
-.container {
-  max-width: 1200px; /* 容器最大宽度 */
-  margin: 0 auto; /* 上下0，左右自动（居中） */
-  padding: 0 20px; /* 左右填充 */
-}
-
-/* 头部样式 */
-.header {
-  background-image: url('/assets/images/background.jpg'); 
-  background-size: cover;
-  padding: 100px 0; /* 调整上边距 */
-  text-align: center;
-  color: white;
-  font-size: 3em;
 }
 
 /* 导航栏样式 */
 .navbar {
   background-color: #333;
-  display: flex;
-  justify-content: center; /* 水平居中 */
-  align-items: center;
-  width: 100%; /* 导航栏宽度 */
+  text-align: center; /* 文本居中 */
+  padding: 10px 0; /* 导航栏内边距 */
+}
+
+.navbar ul {
+  list-style: none; /* 移除列表项的默认样式 */
+  padding: 0;
+}
+
+.navbar li {
+  display: inline; /* 使列表项在一行显示 */
+  margin: 0 15px; /* 列表项之间的间隔 */
 }
 
 .navbar a {
-  display: block;
   color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
-  margin: 0 10px; /* 导航项之间的间隔 */
+  text-decoration: none; /* 移除下划线 */
+  padding: 5px 10px; /* 链接内边距 */
 }
 
 .navbar a:hover {
@@ -48,9 +33,22 @@ body, html {
   color: black;
 }
 
-/* 内容区域样式 */
+/* 头部样式 */
+.header {
+  margin: 20px 0; /* 上下边距 */
+  text-align: center; /* 文本居中 */
+}
+
+/* 页面内容样式 */
 .content {
-  padding: 50px 0; /* 内容区域上边距和下边距 */
-  background-color: #f4f4f4;
-  text-align: center;
+  margin: 20px 0;
+  text-align: center; /* 文本居中 */
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+  .navbar li {
+    display: block;
+    margin: 5px 0;
+  }
 }
