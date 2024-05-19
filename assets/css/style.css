@@ -1,9 +1,28 @@
 /* assets/css/style.css */
 
-body {
-  background-image: url('{{ "/assets/images/background.jpg" | relative_url }}');
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: white; 
+}
+
+.background-image {
+  width: 33%; /* 图片宽度设置为屏幕的三分之一 */
+  height: auto; /* 高度自动调整以保持图片比例 */
+  background-image: url('assets/images/background.jpg');
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  background-attachment: fixed;
+  background-position: center;
+}
+
+.content {
+  text-align: center;
 }
