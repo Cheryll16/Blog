@@ -8,23 +8,16 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex; 
-      flex-direction: row; 
-      justify-content: center; 
-      align-items: center; 
-      min-height: 100vh; 
-      background-color: #f4f4f4; 
+      background-color: #f4f4f4;
     }
 
     .navbar {
       background-color: #333;
       overflow: hidden;
-     
-      /* width: 100%; */
     }
 
     .navbar a {
-      float: none; 
+      float: left; 
       display: block;
       color: white;
       text-align: center;
@@ -37,13 +30,6 @@
       color: black;
     }
 
-    .content {
-      padding: 50px;
-      margin: 30px 0;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-
     .header {
       background-image: url('header-background.jpg');
       background-size: cover;
@@ -51,6 +37,13 @@
       text-align: center;
       color: white;
       font-size: 3em;
+    }
+
+    .content {
+      padding: 50px;
+      margin: 30px 0;
+      background-color: #f4f4f4;
+      text-align: center;
     }
   </style>
 </head>
@@ -60,6 +53,7 @@
     <h1>Ipse Dixit</h1>
   </div>
 
+ 
   <div class="navbar">
     <a href="#home">Home</a>
     <a href="#blog">Blog</a>
