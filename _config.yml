@@ -1,6 +1,6 @@
 # _config.yml
 
-# 网站的基础 URL
+baseurl: "/Blog/"
 url: "https://cheryll16.github.io/Blog/"
 
 # 网站的标题
