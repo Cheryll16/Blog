@@ -15,8 +15,8 @@ body, html {
 }
 
 .background-image {
-  width: 33%; /* 图片宽度设置为屏幕的三分之一 */
-  height: auto; /* 高度自动调整以保持图片比例 */
+  width: 33%; 
+  height: auto; 
   background-image: url('assets/images/background.jpg');
   background-size: contain;
   background-repeat: no-repeat;
