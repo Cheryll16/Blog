@@ -1,17 +1,8 @@
-# _config.yml
-
 baseurl: "/Blog/"
 url: "https://cheryll16.github.io/Blog/"
-
-# 网站的标题
 title: "Ipse Dixit"
-
-# 网站的描述
 description: "A Personal Blog"
-
-# 网站的语言设置
 lang: "en"
 
-background-image: assets/images/background.jpg
 
   
