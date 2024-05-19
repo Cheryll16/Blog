@@ -1,0 +1,21 @@
+<!-- _layouts/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <title>{{ site.title }}</title>
+</head>
+<body style="background-image: url('{{ '/assets/images/background.jpg' | relative_url }}');">
+
+  <nav>
+    <ul>
+      {% for item in site.nav %}
+        <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+</body>
+</html>
