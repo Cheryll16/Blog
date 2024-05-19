@@ -8,15 +8,23 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
+      display: flex; /* 使用Flexbox*/
+      flex-direction: column; /* 子元素垂直排列*/
+      justify-content: center; /* 垂直居中*/
+      align-items: center; /* 水平居中*/
+      min-height: 100vh; /* 至少为视口高度*/
+      background-color: #f4f4f4; /* 背景颜色*/
     }
 
     .navbar {
       background-color: #333;
       overflow: hidden;
+      /* 移除宽度限制，让导航栏在中间*/
+      /* width: 100%; */
     }
 
     .navbar a {
-      float: left;
+      float: none; /* 不使用float*/
       display: block;
       color: white;
       text-align: center;
@@ -37,7 +45,7 @@
     }
 
     .header {
-      background-image: url('header-background.jpg'); /* 替换为你的背景图片 */
+      background-image: url('header-background.jpg');
       background-size: cover;
       padding: 100px 0;
       text-align: center;
@@ -48,16 +56,17 @@
 </head>
 <body>
 
+  <div class="header">
+    <h1>Ipse Dixit</h1>
+  </div>
+
+  <!-- 导航栏现在放在header下方-->
   <div class="navbar">
     <a href="#home">Home</a>
     <a href="#blog">Blog</a>
     <a href="#travel">Travel</a>
     <a href="#fanwork">Fanwork</a>
     <a href="#collections">Collections...</a>
-  </div>
-
-  <div class="header">
-    <h1>Ipse Dixit</h1>
   </div>
 
   <div class="content">
