@@ -1,35 +1,25 @@
 /* assets/css/style.css */
-
 body, html {
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-.container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background-color: white; 
-}
-
-.background-image {
-  width: 33%; 
-  height: auto; 
-  background-image: url('/assets/images/background.jpg');
-  background-size: contain;
+.full-screen-background {
+  /* 背景图片设置 */
+  background-image: url('/assets/images/your-background-image.jpg');
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: center center;
-  margin: 0 auto;
+  height: 100%; /* 确保背景容器占满整个视口高度 */
+  min-height: 100vh; /* 确保至少为视口高度 */
 }
-
-.title {
-  text-align: center;
-  margin-top: 50px; 
-}
-
 
 .content {
+  /* 内容区域样式 */
   text-align: center;
+  padding: 20px;
+  /* 根据背景图片的光线，可能需要设置文本颜色 */
+  color: #fff;
+  /* 如果需要，添加更多样式 */
 }
