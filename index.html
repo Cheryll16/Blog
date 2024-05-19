@@ -4,29 +4,75 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ipse Dixit</title>
-  <!-- 链接外部CSS文件 -->
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex; /* 使用Flexbox*/
+      flex-direction: column; /* 子元素垂直排列*/
+      justify-content: center; /* 垂直居中*/
+      align-items: center; /* 水平居中*/
+      min-height: 100vh; /* 至少为视口高度*/
+      background-color: #f4f4f4; /* 背景颜色*/
+    }
+
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+      /* 移除宽度限制，让导航栏在中间*/
+      /* width: 100%; */
+    }
+
+    .navbar a {
+      float: none; /* 不使用float*/
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .content {
+      padding: 50px;
+      margin: 30px 0;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+
+    .header {
+      background-image: url('header-background.jpg');
+      background-size: cover;
+      padding: 100px 0;
+      text-align: center;
+      color: white;
+      font-size: 3em;
+    }
+  </style>
 </head>
 <body>
 
-  <header class="header">
+  <div class="header">
     <h1>Ipse Dixit</h1>
-  </header>
+  </div>
 
-  <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#travel">Travel</a></li>
-      <li><a href="#fanwork">Fanwork</a></li>
-      <li><a href="#collections">Collections...</a></li>
-    </ul>
-  </nav>
+  <!-- 导航栏现在放在header下方-->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#blog">Blog</a>
+    <a href="#travel">Travel</a>
+    <a href="#fanwork">Fanwork</a>
+    <a href="#collections">Collections...</a>
+  </div>
 
-  <!-- 页面其他内容 -->
-  <main class="content">
+  <div class="content">
     <p>Welcome to my landing page.</p>
-  </main>
+    <!-- 这里可以添加更多内容 -->
+  </div>
 
 </body>
 </html>
