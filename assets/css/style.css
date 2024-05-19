@@ -6,20 +6,20 @@ body, html {
 }
 
 .full-screen-background {
-  /* 背景图片设置 */
-  background-image: url('/assets/images/your-background-image.jpg');
+
+  background-image: url('/assets/images/bg.jpg');
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%; /* 确保背景容器占满整个视口高度 */
-  min-height: 100vh; /* 确保至少为视口高度 */
+  height: 100%; 
+  min-height: 100vh; 
 }
 
 .content {
-  /* 内容区域样式 */
+  
   text-align: center;
   padding: 20px;
-  /* 根据背景图片的光线，可能需要设置文本颜色 */
+  
   color: #fff;
-  /* 如果需要，添加更多样式 */
+  
 }
