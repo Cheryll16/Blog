@@ -1,9 +1,30 @@
-baseurl: "/Blog/"
-url: "https://cheryll16.github.io/Blog/"
-title: "Ipse Dixit"
-description: "A Personal Blog"
-lang: "en"
-include: ['assets']
+lang:                  en
+title:                 Ipse Dixit
+tagline:               "来者皆客。"
+#keywords:              
+#logo:                  /assets/images/logo.png
+author:
+  name:                <Cheryl> <Yates>
+  email:               
+
+# Add links to the sidebar.
+menu:
+  - title:             Home
+    url:               /home/
+  - title:             Blog
+    url:               /blogs/
+  - title:             About
+    url:               /about/
 
 
-  
+# This text will appear in a `<small>` tag in the footer of every page.
+copyright:             © 2024. All rights reserved.
+
+
+paginate:              5
+paginate_path:         /:num/
+
+
+title_image:          /assets/images/background.jpg
+theme_color:           rgb(25,55,71)
+
