@@ -1,0 +1,9 @@
+/* assets/css/style.css */
+
+body {
+  background-image: url('{{ "/assets/images/background.jpg" | relative_url }}');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
