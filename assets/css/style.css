@@ -1,26 +1,12 @@
-/* 页面整体样式 */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #f4f4f4;
-}
-
-/* 头部样式 */
 .header {
-  background-image: url('header-background.jpg');
-  background-size: cover;
-  padding: 100px 0;
-  text-align: center;
-  color: white;
+  background-image: url('assets/images/background.jpg'); 
+  background-repeat: no-repeat; 
+  padding: 80px 0; 
+  text-align: center; 
+  color: black; 
   font-size: 3em;
 }
 
-/* 导航栏样式 */
 .navbar {
   background-color: #333;
   overflow: hidden;
